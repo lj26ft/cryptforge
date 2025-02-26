@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ],
+  "env": {
+    "NEXT_PUBLIC_XUMM_API_KEY": "@xumm_api_key",
+    "NEXT_PUBLIC_XUMM_API_SECRET": "@xumm_api_secret",
+    "OPENAI_API_KEY": "@openai_api_key",
+    "PINATA_JWT": "@pinata_jwt"
+  }
+}
+
